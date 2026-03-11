@@ -5,7 +5,7 @@
 
 const size_t MIN_KB = 4;         // 4 KB
 const size_t MAX_KB = 512 * 1024;       // 512 MB (adjust if RAM is small)
-const size_t Z2_KB = MAX_KB/32;
+const size_t Z2_KB = 32 * 1024;
 const size_t Z1_KB = Z2_KB/32;
 
 

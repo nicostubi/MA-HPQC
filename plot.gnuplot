@@ -14,8 +14,8 @@ plot 'data' using 1:2 w l title "stride 64", \
      'data' using 1:8 w l title "stride 4096", \
      'data' using 1:9 w l title "stride 8192"
 
-set output 'ws-0-16MB.pdf'
-set xrange [0:16384]
+set output 'ws-0-32MB.pdf'
+set xrange [0:32768]
 replot
 
 set output 'ws-0-512kB.pdf'
