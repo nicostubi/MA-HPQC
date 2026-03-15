@@ -106,10 +106,9 @@ int main(void) {
                 uint64_t t1 = rdtsc();
 
 #if defined(__x86_64__) || defined(_M_X64)
-                // Approximation: assume CPU around 3.0 GHz
-                // 1 cycle ≈ 1/3 ns at 3 GHz
-                // TODO: adjust to 4.8 GHz and disable "dynamic speed" when running
-                double ns = (double)(t1 - t0) / 3.0;
+                // Approximation: assume CPU around 4.8 GHz
+                // 1 cycle ≈ 1/3 ns at 4.8 GHz
+                double ns = (double)(t1 - t0) / 4.8;
 #else
                 double ns = (double)(t1 - t0);
 #endif
